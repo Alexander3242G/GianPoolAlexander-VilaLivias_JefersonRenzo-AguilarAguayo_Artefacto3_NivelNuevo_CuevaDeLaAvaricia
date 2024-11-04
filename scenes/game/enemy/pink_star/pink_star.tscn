@@ -1,0 +1,578 @@
+[gd_scene load_steps=49 format=3 uid="uid://cgw5ii1gltfs3"]
+
+[ext_resource type="Texture2D" uid="uid://dh8l2tiln1cli" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/06-anticipation/anticipation_01.png" id="1_s6bqs"]
+[ext_resource type="Texture2D" uid="uid://dfljo0uhq82c6" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/06-anticipation/anticipation_02.png" id="2_gowq7"]
+[ext_resource type="Texture2D" uid="uid://cnwtw40s8qkbg" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/06-anticipation/anticipation_03.png" id="3_2h8uk"]
+[ext_resource type="Texture2D" uid="uid://vn2cg45rfrdv" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/07-attack/attack_01.png" id="4_lq3ng"]
+[ext_resource type="Texture2D" uid="uid://ctckxuh8cw8f2" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/07-attack/attack_02.png" id="5_ghroy"]
+[ext_resource type="Texture2D" uid="uid://caeun30kk5kab" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/07-attack/attack_03.png" id="6_kyxh7"]
+[ext_resource type="Texture2D" uid="uid://cfq37306vo72j" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/07-attack/attack_04.png" id="7_4xqy5"]
+[ext_resource type="Texture2D" uid="uid://dumxyp4jme2tv" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/10-dead_ground/dead_ground_01.png" id="8_gknlj"]
+[ext_resource type="Texture2D" uid="uid://kqbkh3subwcm" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/10-dead_ground/dead_ground_02.png" id="9_a4jfa"]
+[ext_resource type="Texture2D" uid="uid://c86fyhyncpbrp" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/10-dead_ground/dead_ground_03.png" id="10_1xqvt"]
+[ext_resource type="Texture2D" uid="uid://bqc0t8cnmpafs" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/10-dead_ground/dead_ground_04.png" id="11_6ulsb"]
+[ext_resource type="Texture2D" uid="uid://d2ejvg5h3eh5d" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/09-dead_hit/dead_hit_01.png" id="12_a6jae"]
+[ext_resource type="Texture2D" uid="uid://3puquwvkhw5u" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/09-dead_hit/dead_hit_02.png" id="13_7otqf"]
+[ext_resource type="Texture2D" uid="uid://lg68eyymqu4w" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/09-dead_hit/dead_hit_03.png" id="14_j7yvx"]
+[ext_resource type="Texture2D" uid="uid://c5g8fu7mv1kx0" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/09-dead_hit/dead_hit_04.png" id="15_shm40"]
+[ext_resource type="Texture2D" uid="uid://dlkibsfvna62v" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/04-fall/fall_01.png" id="16_0403n"]
+[ext_resource type="Texture2D" uid="uid://cocv7dvmgjsjv" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/05-ground/ground_01.png" id="17_q8w2d"]
+[ext_resource type="Texture2D" uid="uid://bisxmyv2yxvvq" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/05-ground/ground_02.png" id="18_628tt"]
+[ext_resource type="Texture2D" uid="uid://b8g1g4p8c8s44" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/08-hit/hit_01.png" id="19_d0f7p"]
+[ext_resource type="Texture2D" uid="uid://dcc4fdgtx8dat" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/08-hit/hit_02.png" id="20_g6xky"]
+[ext_resource type="Texture2D" uid="uid://dw4pbxjrjmqu1" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/08-hit/hit_03.png" id="21_5bsgh"]
+[ext_resource type="Texture2D" uid="uid://yvtopq0fmkvg" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/08-hit/hit_04.png" id="22_6b436"]
+[ext_resource type="Texture2D" uid="uid://bm3hmwi0fmubs" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/01-idle/idle_01.png" id="24_fxt7v"]
+[ext_resource type="Texture2D" uid="uid://c27fnvvsso3j2" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/01-idle/idle_02.png" id="25_vcme0"]
+[ext_resource type="Texture2D" uid="uid://drmwyrphfb53p" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/01-idle/idle_03.png" id="26_k4dnr"]
+[ext_resource type="Texture2D" uid="uid://dggw4u8bvj1if" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/01-idle/idle_04.png" id="27_tssbg"]
+[ext_resource type="Texture2D" uid="uid://csa8cypvlp6dv" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/01-idle/idle_05.png" id="28_ydii1"]
+[ext_resource type="Texture2D" uid="uid://kq8idenc4vyn" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/01-idle/idle_06.png" id="29_cukh4"]
+[ext_resource type="Texture2D" uid="uid://buui4nusl2xpd" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/01-idle/idle_07.png" id="30_ywfog"]
+[ext_resource type="Texture2D" uid="uid://vjoqi4i66asm" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/01-idle/idle_08.png" id="31_cists"]
+[ext_resource type="Texture2D" uid="uid://wou3pd303ll3" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/03-jump/jump_01.png" id="31_tjtyl"]
+[ext_resource type="Texture2D" uid="uid://diuvubimnn4v7" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/03-jump/jump_02.png" id="32_fw0pv"]
+[ext_resource type="Texture2D" uid="uid://dkw7jq6tnya66" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/03-jump/jump_03.png" id="33_1r4i2"]
+[ext_resource type="Texture2D" uid="uid://b1kagnjgp68jv" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/02-run/run_01.png" id="34_gq7c2"]
+[ext_resource type="Texture2D" uid="uid://d35pye7ghnk2e" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/02-run/run_02.png" id="35_uokjh"]
+[ext_resource type="Texture2D" uid="uid://jse76nay6ho1" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/02-run/run_03.png" id="36_c8e0s"]
+[ext_resource type="Texture2D" uid="uid://cud7p6i7hdhxl" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/02-run/run_04.png" id="37_n2i01"]
+[ext_resource type="Texture2D" uid="uid://ckl4qv8ghgyly" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/02-run/run_05.png" id="38_qro58"]
+[ext_resource type="Texture2D" uid="uid://m1cmg8f82prl" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/02-run/run_06.png" id="39_67j6f"]
+[ext_resource type="Texture2D" uid="uid://duwgdlp0s83af" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/11-attack_effect/attack_effect_01.png" id="40_l437t"]
+[ext_resource type="Texture2D" uid="uid://12g43rbxsaaw" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/11-attack_effect/attack_effect_02.png" id="41_cc326"]
+[ext_resource type="Texture2D" uid="uid://dvwimn6xo7aha" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/11-attack_effect/attack_effect_03.png" id="42_temuv"]
+[ext_resource type="Texture2D" uid="uid://dpustbe0f2s6o" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/pink_star/11-attack_effect/attack_effect_04.png" id="43_sh5rm"]
+
+[sub_resource type="GDScript" id="GDScript_6chrj"]
+script/source = "extends CharacterBody2D
+## Clase que controla animación y configuración del Enemigo
+##
+## Setea la animación y comportamiento del Enemigo 
+
+
+# Acciones del Enemigo
+@export_enum(
+	\"idle\",
+	\"run\",
+) var animation: String
+
+# Dirección de movimiento del Enemigo
+@export_enum(
+	\"left\",
+	\"right\",
+	\"active\",
+) var moving_direction: String
+
+# Variable para control de animación y colisiones
+@onready var _animation := $EnemyAnimation
+@onready var _animation_effect := $EnemyEffect
+@onready var _raycast_terrain := $Area2D/RayCastTerrain
+@onready var _raycast_wall := $Area2D/RayCastWall
+@onready var _raycast_vision_left := $Area2D/RayCastVisionLeft
+@onready var _raycast_vision_right := $Area2D/RayCastVisionRight
+@onready var _audio_player= $AudioStreamPlayer2D # Reproductor de audios
+
+# Definimos sonidos
+var _punch_sound = preload(\"res://assets/sounds/punch.mp3\")
+var _male_hurt_sound = preload(\"res://assets/sounds/male_hurt.mp3\")
+
+# Definición de parametros de física
+var _gravity = 10
+var _speed = 40
+# Definición de dirección de movimientos
+var _moving_left = true
+# Copia de objeto que entra a colisión
+var _body: Node2D
+# Vandera de persecución
+var _is_persecuted = false
+# Vandera de no detectar colisiones
+var _stop_detection = false
+# Vandera de no detectar ataques
+var _stop_attack = false
+# Cuantas veces aguanta
+var _hit_to_die = 2
+# Cuantas veces pegaron al personaje principal
+var _has_hits = 0
+# La muerte del cangrejo
+var die = false
+
+
+# Función de inicialización
+func _ready():
+	# Seteamos la direccion de movimiento
+	if moving_direction == 'right':
+		_moving_left = false
+		scale.x = -scale.x
+	# Si no seteamos la animación ponemos por defecto la animación idle
+	if not animation:
+		animation = \"idle\"
+	# Iniciamos la animación
+	_init_state()
+
+
+func _physics_process(delta):
+	if (die): return
+	# Si la animación es de correr, aplicamos el movimiento
+	if animation == \"run\":
+		_move_character(delta)
+		_turn()
+	# Si la animación es de idle, aplicamos el movimiento
+	elif animation == \"idle\":
+		_move_idle()
+	# Si la animación es de persecución, aplicamos la persecución
+	if moving_direction == \"active\" and !_stop_detection:
+		_detection()
+
+
+func _move_character(_delta):
+	# Aplicamos la gravidad
+	velocity.y += _gravity
+	
+	# Aplicamos la dirección de movimiento
+	if _moving_left:
+		velocity.x = - _speed
+	else:
+		velocity.x = _speed
+
+	# Iniciamos el movimiento
+	move_and_slide()
+
+
+func _move_idle():
+	# Aplicamos la gravidad
+	velocity.y += _gravity
+	# Aplicamos la dirección de movimiento
+	velocity.x = 0
+	# Iniciamos el movimiento
+	move_and_slide()
+
+
+func _on_area_2d_body_entered(body):
+	# Validamos si la colición es con el personaje principal
+	if body.is_in_group(\"player\"):
+		_stop_detection = true
+		# Atacamos
+		_attack()
+		# Creamos la copia de objeto
+		_body = body
+
+
+func _on_area_2d_body_exited(__body):
+	if not die:
+		# Estado inicial
+		_init_state()
+
+
+func _turn():
+	# Validamos si termino el terreno
+	if not _raycast_terrain.is_colliding() or _raycast_wall.is_colliding():
+		var _object = _raycast_wall.get_collider()
+		if not _object or _object and not _object.is_in_group(\"player\"):
+			# Damos la vuelta
+			_moving_left = !_moving_left
+			scale.x = -scale.x
+
+
+func _attack():	
+	# No atacamos si se seteó la banderita _stop_attack
+	if _stop_attack:
+		return
+		
+	if not _body:
+		# Esperamos 1 segundos
+		await get_tree().create_timer(0).timeout
+		_attack()
+		
+	# Animación de atacar
+	_animation.play(\"attack\")
+
+
+func _init_state():
+	if _stop_attack:
+		return
+	# Animación de estado inicial
+	velocity.x = 0
+	_animation.play(animation)
+	_animation_effect.play(\"idle\")
+	# Limpiamos las variables
+	_body = null
+	_stop_detection = false
+
+func _on_enemy_animation_frame_changed():
+	if _stop_attack:
+		return
+	# Validamos si el frame de animación es 0
+	if _animation.frame == 0 and _animation.get_animation() == \"attack\":
+		# Pegamos al personaje
+		_animation_effect.play(\"attack_effect\")
+		
+		if HealthDashboard.life > 0:
+			# Reproducimos sonido
+			_audio_player.stream = _male_hurt_sound
+			_audio_player.play()
+		else:
+			_animation.play(\"idle\")
+			_animation_effect.play(\"idle\")
+		
+		if _body:
+			# Quitamos vidas
+			var _move_script = _body.get_node(\"MainCharacterMovement\")
+			_move_script.hit(2)
+
+
+func _detection():
+	# Si ya no hay tierra regresamos al estado inicial
+	if not _raycast_terrain.is_colliding():
+		# Iniciamos la animación
+		_init_state()
+		return
+	# Obtenemos los colaiders
+	var _object1 = _raycast_vision_left.get_collider()
+	var _object2 = _raycast_vision_right.get_collider()
+	
+	# Validamos si la colisión es del lado izquerdo
+	if _object1 and _object1.is_in_group(\"player\") and _raycast_vision_left.is_colliding():
+		_move(true)
+	else:
+		_is_persecuted = false
+	
+	# Validamos si la colisión es del lado derecho
+	if _object2 and _object2.is_in_group(\"player\") and _raycast_vision_right.is_colliding():
+		_move(false)
+	
+	# No hay colisiones
+	if not _object1 and not _object2 and _animation.get_animation() != \"attack\":
+		_is_persecuted = false
+		
+		
+func _move(_direction):
+	# Si ya estamos en acción salimos
+	if _is_persecuted or _animation.get_animation() == \"attack\":
+		return
+	# Aplicamos la gravidad
+	velocity.y += _gravity
+	
+	# Volteamos al personaje
+	if not _direction:
+		_moving_left = !_moving_left
+		scale.x = -scale.x
+	else:
+		# Aplicamos la dirección de movimiento
+		if _moving_left:
+			velocity.x = - _speed * 1
+		else:
+			velocity.x = _speed * 1
+
+	# Iniciamos el movimiento
+	move_and_slide()
+
+
+func _on_area_2d_area_entered(area):
+	# Si estan atacando al enemigo
+	if area.is_in_group(\"hit\"):
+		_damage()
+	elif area.is_in_group(\"die\"):
+		die = true
+		_damage()
+
+func _damage():	
+	# Agregamos un golpe
+	_has_hits += 1
+	# Reproducimos sonido
+	_audio_player.stream = _punch_sound
+	_audio_player.play()
+	# Reproducimos la animación de pegar
+	_animation.play(\"hit\")
+	_animation_effect.play(\"idle\")
+	
+	# Validamos si tenemos ataque especial
+	if Global.number_attack > 0:
+		# Restamos 1 al ataque especial
+		die = true
+		Global.number_attack -= 1
+	
+	# Validamos si ya no tenemos ataque
+	if Global.number_attack == 0:
+		# Seteamos el ataque normal
+		Global.attack_effect = \"normal\"
+
+	if die or _hit_to_die <= _has_hits:
+		# Seteamoas banderita no atacar
+		_stop_attack = true
+		die = true
+		velocity.x = 0
+		# Lo matamos y quitamos de la escena
+		if _animation.animation != \"dead_ground\":
+			_animation.play(\"dead_ground\")
+
+
+func _on_enemy_animation_animation_finished():
+	if _animation.animation == \"dead_ground\":
+		queue_free()
+	elif _animation.animation == \"hit\":
+		if not _stop_attack: 
+			_animation.play(\"idle\")
+			_animation_effect.play(\"idle\")
+			# Atacamos
+			_attack()
+	
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fq7gh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s6bqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gowq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2h8uk")
+}],
+"loop": true,
+"name": &"anticipation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_lq3ng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ghroy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_kyxh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4xqy5")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_gknlj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_a4jfa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1xqvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6ulsb")
+}],
+"loop": false,
+"name": &"dead_ground",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_a6jae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_7otqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_j7yvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_shm40")
+}],
+"loop": false,
+"name": &"dead_hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_0403n")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_q8w2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_628tt")
+}],
+"loop": true,
+"name": &"ground",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_d0f7p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_g6xky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_5bsgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6b436")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_fxt7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_vcme0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_k4dnr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_tssbg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ydii1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_cukh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ywfog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_cists")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_tjtyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_fw0pv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_1r4i2")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_gq7c2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_uokjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_c8e0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_n2i01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_qro58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_67j6f")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ku5hj"]
+size = Vector2(40, 23)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6nhye"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_l437t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_cc326")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_temuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_sh5rm")
+}],
+"loop": true,
+"name": &"attack_effect",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_62ixa"]
+size = Vector2(42, 25)
+
+[node name="pinkStar" type="CharacterBody2D"]
+script = SubResource("GDScript_6chrj")
+
+[node name="EnemyAnimation" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_fq7gh")
+animation = &"idle"
+frame_progress = 0.340989
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 1.5)
+shape = SubResource("RectangleShape2D_ku5hj")
+
+[node name="EnemyEffect" type="AnimatedSprite2D" parent="."]
+position = Vector2(20, 6)
+scale = Vector2(1.2955, 1.17758)
+sprite_frames = SubResource("SpriteFrames_6nhye")
+animation = &"idle"
+frame_progress = 0.879281
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, 1.5)
+shape = SubResource("RectangleShape2D_62ixa")
+one_way_collision_margin = 0.0
+
+[node name="RayCastTerrain" type="RayCast2D" parent="Area2D"]
+position = Vector2(-19, -7)
+scale = Vector2(0.5, 0.5)
+
+[node name="RayCastWall" type="RayCast2D" parent="Area2D"]
+position = Vector2(-18, 0)
+scale = Vector2(0.5, 0.5)
+target_position = Vector2(-5, 0)
+
+[node name="RayCastVisionLeft" type="RayCast2D" parent="Area2D"]
+position = Vector2(-20, 0)
+scale = Vector2(0.5, 0.5)
+target_position = Vector2(-300, 0)
+
+[node name="RayCastVisionRight" type="RayCast2D" parent="Area2D"]
+position = Vector2(24, 0)
+scale = Vector2(0.5, 0.5)
+target_position = Vector2(300, 0)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+bus = &"Effects"
+
+[connection signal="animation_finished" from="EnemyAnimation" to="." method="_on_enemy_animation_animation_finished"]
+[connection signal="frame_changed" from="EnemyAnimation" to="." method="_on_enemy_animation_frame_changed"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

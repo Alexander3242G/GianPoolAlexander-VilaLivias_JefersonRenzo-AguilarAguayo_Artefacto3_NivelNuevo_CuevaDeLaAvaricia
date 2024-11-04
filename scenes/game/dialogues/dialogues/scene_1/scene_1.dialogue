@@ -1,0 +1,17 @@
+~ dialogue_1
+
+Selena la Ballena: ¡Hola aventurero! ¿qué te trae por estos rumbos?
+Pirata Malaplata: Solo estoy de paso. ¿Que hace alguien como tú en este lugar?
+Selena la Ballena: Bueno, me cansé del mar y la arena, así que quise cambiar de entorno.
+Pirata Malaplata: Ya veo... En lo personal no me gusta estar aquí, muchos menos con estos bichos aquí dentro
+
+Selena la Ballena: Eso no es nada, detrás de la puerta he escuchado muchos ruidos escalofriantes. Ni yo me he atrevido a entrar más adentro, así que ten cuidado.
+Selena la Ballena: Por cierto, más adelante hay una poción que te ayudará a salir de esta cueva. ¡Buena suerte!
+
+- Gracias, ¡No olvidaré esto!
+  => dialogue_2
+
+
+~ dialogue_2
+Selena la Ballena: ¡Bueno nos vemos!
+=> END

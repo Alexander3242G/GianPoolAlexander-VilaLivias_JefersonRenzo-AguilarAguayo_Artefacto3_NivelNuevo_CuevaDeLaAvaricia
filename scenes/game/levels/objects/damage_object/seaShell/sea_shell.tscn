@@ -1,0 +1,123 @@
+[gd_scene load_steps=22 format=3 uid="uid://dmdsho8hrf265"]
+
+[ext_resource type="Script" path="res://scenes/game/levels/objects/damage_object/seaShell/sea_shell.gd" id="1_6d52r"]
+[ext_resource type="Texture2D" uid="uid://kgvjamk0rjle" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/seashell/seashell_fire/1.png" id="2_qu63x"]
+[ext_resource type="Texture2D" uid="uid://dg2aga8auiekm" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/seashell/seashell_fire/2.png" id="3_5vh1b"]
+[ext_resource type="Texture2D" uid="uid://5pjfwbotr646" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/seashell/seashell_fire/3.png" id="4_i4ovd"]
+[ext_resource type="Texture2D" uid="uid://ksv81roke1e1" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/seashell/seashell_fire/4.png" id="5_bfqlr"]
+[ext_resource type="Texture2D" uid="uid://bt06gf6jx4wwa" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/seashell/seashell_fire/5.png" id="6_ck4ld"]
+[ext_resource type="Texture2D" uid="uid://c8sl6anu4002e" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/seashell/seashell_fire/6.png" id="7_ahnsp"]
+[ext_resource type="Texture2D" uid="uid://bb4hccofvwe3x" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/cannon/cannon_hit/1.png" id="8_iggnm"]
+[ext_resource type="Texture2D" uid="uid://docejptn7mf5s" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/cannon/cannon_hit/2.png" id="9_wvg34"]
+[ext_resource type="Texture2D" uid="uid://dlgms8bbptic1" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/cannon/cannon_hit/3.png" id="10_3ik3p"]
+[ext_resource type="Texture2D" uid="uid://c8ml72h6eandi" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/cannon/cannon_hit/4.png" id="11_ee20q"]
+[ext_resource type="Texture2D" uid="uid://c8u765mmskpm4" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/seashell/seashell_idle/1.png" id="12_h721d"]
+[ext_resource type="Texture2D" uid="uid://b6r22txxtcslw" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/cannon/cannon_fire_effect/1.png" id="13_3bvmw"]
+[ext_resource type="Texture2D" uid="uid://bajc02rl7qd6" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/cannon/cannon_fire_effect/2.png" id="14_f3r6x"]
+[ext_resource type="Texture2D" uid="uid://cspsvvvqdblxt" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/cannon/cannon_fire_effect/3.png" id="15_aoggk"]
+[ext_resource type="Texture2D" uid="uid://cj10crvyo2oif" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/cannon/cannon_fire_effect/4.png" id="16_k5wxo"]
+[ext_resource type="Texture2D" uid="uid://bpfdf0fm10aws" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/cannon/cannon_fire_effect/5.png" id="17_8nppp"]
+[ext_resource type="Texture2D" uid="uid://bkd4sw67xn25y" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/cannon/cannon_fire_effect/6.png" id="18_r8qll"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ktbri"]
+size = Vector2(28, 22)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h5nvd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qu63x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5vh1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i4ovd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bfqlr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ck4ld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ahnsp")
+}],
+"loop": false,
+"name": &"fire",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_iggnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wvg34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3ik3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ee20q")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_h721d")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tmb21"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_3bvmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_f3r6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_aoggk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_k5wxo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_8nppp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_r8qll")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"fire_effect",
+"speed": 5.0
+}]
+
+[node name="SeaShell" type="RigidBody2D" groups=["cannon"]]
+script = ExtResource("1_6d52r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_ktbri")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -6)
+sprite_frames = SubResource("SpriteFrames_h5nvd")
+animation = &"idle"
+
+[node name="AnimatedSprite2DEffects" type="AnimatedSprite2D" parent="AnimatedSprite2D"]
+position = Vector2(-22, 11)
+scale = Vector2(0.575, 0.517857)
+sprite_frames = SubResource("SpriteFrames_tmb21")
+animation = &"fire_effect"
+
+[connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]

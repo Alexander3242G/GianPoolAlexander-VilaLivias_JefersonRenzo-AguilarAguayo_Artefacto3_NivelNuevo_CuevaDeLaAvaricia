@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=3 uid="uid://dv8xhwk016l0g"]
+
+[ext_resource type="Script" path="res://scenes/game/levels/objects/damage_object/seaShell/sea_shell_ball.gd" id="1_88ud7"]
+[ext_resource type="Texture2D" uid="uid://bpmwwclc0i1hj" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/seashell/pearl_destroyed/1.png" id="2_ecchh"]
+[ext_resource type="Texture2D" uid="uid://dst3wg174hsnq" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/seashell/pearl_destroyed/2.png" id="3_dyep6"]
+[ext_resource type="Texture2D" uid="uid://ku1ko4lx5uf0" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/seashell/pearl_destroyed/3.png" id="4_vdvuk"]
+[ext_resource type="Texture2D" uid="uid://obwqhusj163c" path="res://assets/sprites/treasure_hunters/shooter_traps/sprites/seashell/pearl_idle/1.png" id="9_2rwpd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7a6pl"]
+radius = 7.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ky7wi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ecchh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dyep6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vdvuk")
+}],
+"loop": false,
+"name": &"destroyed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ecchh")
+}, {
+"duration": 2.5,
+"texture": null
+}],
+"loop": false,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_2rwpd")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="SeaShellBall" type="RigidBody2D"]
+mass = 0.1
+gravity_scale = 0.5
+inertia = 5.0
+lock_rotation = true
+max_contacts_reported = 1
+contact_monitor = true
+linear_velocity = Vector2(-500, 20)
+script = ExtResource("1_88ud7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_7a6pl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, 1)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_ky7wi")
+animation = &"idle"
+speed_scale = 2.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
