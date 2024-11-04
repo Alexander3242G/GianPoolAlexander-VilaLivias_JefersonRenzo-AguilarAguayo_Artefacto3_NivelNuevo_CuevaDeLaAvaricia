@@ -31,7 +31,7 @@ var _movements = {
 }
 var _current_movement = _movements.IDLE # Variable de movimiento
 var _is_jumping = false # Indicamos que el personaje está saltando
-var _max_jumps = 3 # Máximo número de saltos
+var _max_jumps = 2 # Máximo número de saltos
 var _jump_count = 0 # Contador de saltos realizados
 var _died = false # Define si esta vovo o muerto
 var attacking = false # Define si esta atacando
